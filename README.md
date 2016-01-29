@@ -42,6 +42,10 @@ Openstack 預設使用 KVM 作為虛擬化技術，但是因為 ARM 虛擬化還
 
 因為效能需求選擇 BTRFS ，而非 Device Mapper ，但因此喪失 Device Mapper 提供的磁碟限制功能，必須尋找 BTRFS 的磁碟限制的替代方案
 
+### Linux Kernel Config
+
+修改 Kernel Config 並重新編譯 ARM Linux Kernel ，目的取得更佳的效能以及使用體驗。
+
 ### Nova-Docker
 
 Openstack 連接 Docker 的 driver ，有實作 Heat 相關功能，尚待研究 Heat 功能。
