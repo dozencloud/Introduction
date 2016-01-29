@@ -44,7 +44,7 @@ Openstack 預設使用 KVM 作為虛擬化技術，但是因為 ARM 虛擬化還
 
 ### Nova-Docker
 
-Openstack 連接 Docker 的 driver ，有實作 Heat 相關功能，尚待研究。
+Openstack 連接 Docker 的 driver ，有實作 Heat 相關功能，尚待研究 Heat 功能。
 
 ### ZFS zvol
 
