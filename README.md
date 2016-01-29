@@ -34,6 +34,10 @@ Openstack 預設使用 KVM 作為虛擬化技術，但是因為 ARM 虛擬化還
 
 ## 研究方向
 
+### ARMv8
+
+目前有借用技嘉 MP30-AR0 的 ARM 伺服器，正在研究如何使用以及 Kernel 相關的設定。
+
 ### 記憶體限制
 
 要將計算節點的 CGroup 相關功能開啟，必須要在開機載入 Kernel 時加上 `cgroup_enable=memory swapaccount=1` 作為參數，正在研究更改 `boot.scr` 的方式。
@@ -53,3 +57,30 @@ Openstack 連接 Docker 的 driver ，有實作 Heat 相關功能，尚待研究
 ### ZFS zvol
 
 使用 ZFS zvol 雖然可以得到讓計算節點有原生的檔案系統支援，但是沒有辦法像 NFS 系統一樣可以快速針對節點損壞狀況進行快速 Container 移轉，必須要再研究如何進行 Docker Container 的移轉模式。
+
+## 未來展望
+
+### ARMv7 Bare-Metal
+
+Docker Container 算是中間的過渡時期，最終目標還是希望可以有獨立的 ARMv7 Module 供應使用者使用。
+
+### ARMv8 KVM
+
+ARMv8 虛擬化技術持續發展中，未來相當可以期待 ARMv8 所提供的虛擬化技術成熟。
+
+## 設備
+
+### 目前
+
+* HP ProLiant DL360 Generation 5
+* Banana Pi M2
+* Edge-Core ECS4110-52T Switch
+* Edge-Core EWS4502 TR Wireless Controller
+
+### 所需
+
+* x86 Server
+* ARMv8 Server
+* Public IPs
+* 網路線
+* 機房
