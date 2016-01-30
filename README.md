@@ -80,6 +80,7 @@ ARMv8 虛擬化技術持續發展中，未來相當可以期待 ARMv8 所提供�
 ### 所需
 
 * x86 Server
+* x86 Server for NAS
 * ARMv8 Server （非使用 MP30-AR0）
 * Public IPs
 * 網路線
